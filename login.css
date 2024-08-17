@@ -233,9 +233,8 @@ footer div:last-of-type {
     display: block;
     text-align: left;
     margin-bottom: 5px;
-    font-weight: 600;
     font-size: 14px;
-    color: #2a2a2adc;
+    color: #434343;
 }
 
 .login-container input[type="email"],
@@ -246,6 +245,7 @@ footer div:last-of-type {
     border-radius: 5px;
     border: 1px solid #dcdcdc;
     font-size: 14px;
+    outline: none;
 }
 
 .remember-forgot {

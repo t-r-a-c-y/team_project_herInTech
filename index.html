@@ -6,11 +6,16 @@
     <title>tugendane</title>
     <link rel="shortcut icon" href="./images/unnamed (1) (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    
 </head>
 <body>
     <header>
@@ -27,9 +32,9 @@
                 <li><a href="">Routes</a></li>
                 <li><a href="">Timetable</a></li>
                 <li><a href="">Services</a></li>
-                <li><a href="">Buses</a></li>
+                <li><a href="#bus">Buses</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
-                <button><a href=""><span>Login</span> | Sign Up</a></button>
+                <button><a href="./login.html"><span>Login</span> | Sign Up</a></button>
             </ul>
         </nav>
         <div class="header">
@@ -48,7 +53,7 @@
         </div>
     </header>
     <main>
-    <div class="home2">
+    <!-- <div class="home2">
         <div>
             <h1>Amazing Destinations to enjoy <br> your travels</h1>
             <p>SEUDAM Fast Cat is a fleet of motor-powered catamarans that <br> provide a passenger ferry transfer from the mainland of Thailand <br>through to the Islands in the South of Thailand.</p>
@@ -60,12 +65,31 @@
         <div>
             <img src="./images/travel.png" alt="">
         </div>
-    </div>
-    <div class="home3">
-        <div>            
-            <img src="./images/blue-tour-bus-600nw-22967293 (2).webp" alt="">
-            <img src="./images/header.png" alt="">
+    </div> -->
+    <section class="about" id="about">
+        <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+          <!-- <video src="about-vid-1.mp4" muted autoplay loop class="video"></video> -->
+           <img src="./images/Screenshot 2024-08-08 205145.png" alt="">
+          <div class="controls">
+            <span class="control-btn" data-src="about-vid-1.mp4"></span>
+            <span class="control-btn" data-src="about-vid-2.mp4"></span>
+            <span class="control-btn" data-src="about-vid-3.mp4"></span>
+          </div>
         </div>
+  
+        <div class="content" data-aos="fade-left" data-aos-delay="600">
+          <span>why choose us?</span>
+          <h3>Nature's Majesty Awaits You</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde fugit
+            repellat error deserunt nam aperiam odit libero quos provident.
+            Nostrum?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </section>
+    <div class="home3">
+       
         <div>
             <h1>Time management for our <br> passanger is our priority</h1>
             <p>We will also have a fleet of mini-buses (25 seater) and private VIP <br>
@@ -76,8 +100,12 @@
             </div>
             <button><a href="">Read More</a></button>
         </div>
+        <div>            
+            <img src="./images/blue-tour-bus-600nw-22967293 (2).webp" alt="">
+            <img src="./images/header.png" alt="">
+        </div>
     </div>
-    <h1 class="h111">Our Transportation Services</h1>
+    <h1 class="h111" id="bus">Our Transportation Services</h1>
     <div class="home4">
         <div class="home41">
             <div>
@@ -108,6 +136,138 @@
         
     </div>
     
+    <section class="services" id="services">
+        <div class="heading">
+          <span>our services</span>
+          <h1>countless expericences</h1>
+        </div>
+  
+        <div class="box-container">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-globe"></i>
+            <h3>worldwide</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <i class="fas fa-utensils"></i>
+            <h3>food & drinks</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+            <i class="fas fa-wallet"></i>
+            <h3>affordable price</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+  
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+              cumque.
+            </p>
+          </div>
+        </div>
+      </section>
+
+         <!-- review section starts  -->
+
+    <section class="review">
+        <div class="content" data-aos="fade-right" data-aos-delay="300">
+          <span>testimonials</span>
+          <h3>good news from our clients</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            laudantium corporis fugiat quae unde perspiciatis similique ab modi
+            enim consequatur aperiam cumque distinctio facilis sit, debitis
+            possimus asperiores non harum.
+          </p>
+        </div>
+  
+        <div class="box-container" data-aos="fade-left" data-aos-delay="600">
+          <div class="box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+              ratione.
+            </p>
+            <div class="user">
+              <img src="pic-1.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <span>designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+              ratione.
+            </p>
+            <div class="user">
+              <img src="pic-2.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <span>designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+              ratione.
+            </p>
+            <div class="user">
+              <img src="pic-3.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <span>designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
+              ratione.
+            </p>
+            <div class="user">
+              <img src="pic-4.png" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <span>designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 </div>
     </div>
     <div class="home5">

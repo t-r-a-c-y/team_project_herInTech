@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="shortcut icon" href="./images/unnamed (1) (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <img src="./images/unnamed (1) (1).png" alt="">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Routes</a></li>
+                <li><a href="">Timetable</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Buses</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <button><a href=""><span>Login</span> | Sign Up</a></button>
+            </ul>
+        </nav>
+
+        <div class="background-wrapper">
+        <div class="form-container">
+            <form class="signup-form" onsubmit="return validateForm()">
+                <h2>Sign Up</h2>
+                <div class="double-input-group" id="input-group">
+                    <div class="input-group">
+                        <label for="first-name">First name *</label>
+                        <input type="text" id="first-name" placeholder="First name" required>
+                        <span class="error-message" id="first-name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last name *</label>
+                        <input type="text" id="last-name" placeholder="Last name" required>
+                        <span class="error-message" id="last-name-error"></span>
+                    </div>
+                </div>
+                <div class="double-input-group" id="input-group">
+                    <div class="input-group">
+                        <label for="mobile">Mobile *</label>
+                        <input type="tel" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                        <span class="error-message" id="mobile-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="identification">Identification *</label>
+                        <input type="text" id="identification" placeholder="ID Card no / Pass" required>
+                        <span class="error-message" id="identification-error"></span>
+                    </div>
+                </div>
+        
+                <div class="input-group">
+                    <label for="country">Country *</label>
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option>India</option>
+                    </select>
+                    <span class="error-message" id="country-error"></span>
+                </div>
+        
+                <!-- Email Field -->
+                <div class="input-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+        
+                <!-- Password Fields -->
+                <div class="input-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" placeholder="Password" required minlength="8">
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="re-password">Re-enter password *</label>
+                    <input type="password" id="re-password" placeholder="Re-enter password" required minlength="8">
+                    <span class="error-message" id="re-password-error"></span>
+                </div>
+                <button type="submit">REGISTER</button>
+                <p>Are you a member? <a href="./login.html">Log in here</a></p>
+            </form>
+        </div>
+        </div>
+    </header>
+    <footer>
+        <div>
+            <img src="./images/unnamed (1) (1).png" alt="">
+        </div>
+        <div>
+            <h1>Navigations</h1>
+            <ul>
+                <li>Home</li>
+                <li>Routes</li>
+                <li>Timetable</li>
+                <li>Services</li>
+                <li>Contact US </li>
+                <li>Login| Sign Up</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Social Links</h1>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Get in touch</h1>
+                <div><i class="fa-solid fa-phone" style="color: #2447a3;"></i><span>+91 123 123 1234</span></div>
+                <div><i class="fa-regular fa-envelope" style="color: #2447a3;"></i> <span>infoseudam@gmail.com</span></div>
+                <div> <i class="fa-solid fa-location-dot" style="color: #2447a3;"></i><span>12, Park Street, Thailand</span></div>
+                
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./sign.js"></script>
 </body>
 </html>
